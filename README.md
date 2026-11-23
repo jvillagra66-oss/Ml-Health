@@ -1,4 +1,4 @@
-``markdown
+
 # Proyecto de Machine Learning: Predicción de Enfermedades Cardíacas
 
 Este repositorio contiene el desarrollo de un modelo de aprendizaje automático para la detección temprana y clasificación de riesgos asociados a enfermedades cardiovasculares utilizando el reconocido dataset de la **UCI (University of California, Irvine)**.
