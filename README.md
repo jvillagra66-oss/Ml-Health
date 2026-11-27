@@ -1,4 +1,3 @@
-``markdown
 # 🏥 Proyecto de Predicción de Enfermedades Cardíacas (UCI)
 
 Este repositorio contiene un flujo de trabajo completo para el análisis exploratorio de datos (EDA), la limpieza y el preprocesamiento de un conjunto de datos sobre enfermedades cardíacas proveniente de la **UCI (University of California, Irvine)**.
@@ -35,6 +34,9 @@ Como alternativa de ingeniería de características, se generó un flujo persona
 
 ### 5. Consolidación y Limpieza Final
 * Se fusionaron las variables procesadas de características (`x`) con nuestra etiqueta objetivo (`y`).
-* Se realizó una limpieza final eliminando cualquier fila residual con valores faltantes mediante un `dropna()` global.
-* **Resultado:** Un dataset final de variables independientes `x` y etiquetas `y` verificado con `0%` de valores nulos, listo para algoritmos de clasificación como Regresión Logística, Árboles de Decisión o Random Forest.
-```
+* Se realizó una limpieza final eliminando cualquier fila residual con valores faltantes mediante un `dropna()` global para asegurar la calidad de la entrada.
+* **Resultado:** Un dataset final con variables independientes `x` y etiquetas `y` verificado con `0%` de valores nulos.
+
+### 6. División de Datos (Train-Test Split)
+* Se dividieron los datos limpios y normalizados de manera aleatoria bajo una proporción estándar del **80% para entrenamiento** (`x_train`, `y_train`) y **20% para evaluación/prueba** (`x_test`, `y_test`).
+* Se utilizó una semilla (`random_state=42`) para garantizar la reproducibilidad del experimento en etapas posteriores de entrenamiento de modelos predictivos.
