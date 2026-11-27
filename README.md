@@ -40,3 +40,10 @@ Como alternativa de ingeniería de características, se generó un flujo persona
 ### 6. División de Datos (Train-Test Split)
 * Se dividieron los datos limpios y normalizados de manera aleatoria bajo una proporción estándar del **80% para entrenamiento** (`x_train`, `y_train`) y **20% para evaluación/prueba** (`x_test`, `y_test`).
 * Se utilizó una semilla (`random_state=42`) para garantizar la reproducibilidad del experimento en etapas posteriores de entrenamiento de modelos predictivos.
+
+### 7. Entrenamiento y Evaluación del Modelo
+* **Modelo:** Se implementó un algoritmo de **Regresión Logística** (`modelo_surf`) para la clasificación binaria de pacientes en riesgo vs. sanos.
+* **Rendimiento General:** Se alcanzó un **79% de exactitud (Accuracy)** global en el conjunto de prueba.
+* **Resultados Clave (Clase en Riesgo):**
+  * **Precisión (87%):** Alta confiabilidad cuando el modelo alerta sobre la presencia de enfermedad cardíaca.
+ posteriores de entrenamiento de modelos predictivos.
